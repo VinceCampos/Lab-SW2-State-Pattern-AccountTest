@@ -6,6 +6,7 @@ Suspended accounts: Disallow deposits and withdrawals transactions, but allow vi
 Closed accounts: Disallow all transactions and viewing of account information. 
 
 Currently, the system relies on conditional statements within the Account class to check the account state and determine valid actions. This approach becomes cumbersome and error-prone as the number of states and their associated logic grows.  
+
 Implement the State pattern to improve code maintainability and flexibility:
 Define Account States: Create separate classes representing different account states: ActiveState, SuspendedState, and ClosedState.  
 Implement State Interface: Define an interface AccountState with methods for common actions like deposit, withdraw, activate, suspend, and close.  
